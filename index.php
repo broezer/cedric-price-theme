@@ -18,23 +18,7 @@
 </head>
 <body <?php body_class(); ?>>
     <div id="page" class="hfeed site">
-    <?php
-        $args = array(
-            'post_type' => 'interview',
-            'posts_per_page' => -1
-        );
-        $interviews = get_posts( $args );
-    ?>
-    <?php if( $interviews ) : ?>
-    <ul>
-    <?php foreach( $interviews as $post ) : setup_postdata( $post ); ?>
-        <li><a href="<?php the_permalink(); ?>&amp;json=1" class="read-more"><?php the_title()?></a></li>
-    <?php endforeach; ?>
-    </ul>
-    <?php else: ?>
-    <p>No interviews jet</p>
-    <?php endif; ?>
-    <?php wp_reset_postdata(); ?>
+        <h2>GO AWAY</h2>
     </div>
     <?php wp_footer(); ?>
 </body>
