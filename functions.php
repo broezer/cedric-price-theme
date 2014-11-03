@@ -100,7 +100,7 @@ function json_api_encode_acf($response)
 
 function json_api_add_acf(&$post)
 {
-    $post->interview_fields = get_fields($post->id);
+    $post->interviewFields = get_fields($post->id);
 }
 
 add_filter('json_api_encode', 'json_api_encode_acf');
@@ -117,7 +117,7 @@ register_field_group(array (
 		array (
 			'key' => 'field_5445338abea12',
 			'label' => 'Name',
-			'name' => 'interviewee_name',
+			'name' => 'intervieweeName',
 			'prefix' => '',
 			'type' => 'text',
 			'instructions' => '',
@@ -134,7 +134,7 @@ register_field_group(array (
 		array (
 			'key' => 'field_544533dfbea13',
 			'label' => 'Jobtitle',
-			'name' => 'interviewee_jobtitle',
+			'name' => 'intervieweeJobtitle',
 			'prefix' => '',
 			'type' => 'text',
 			'instructions' => '',
@@ -274,7 +274,7 @@ register_field_group(array (
 		array (
 			'key' => 'field_544671cfb8792',
 			'label' => 'Location URL',
-			'name' => 'location_url',
+			'name' => 'locationUrl',
 			'prefix' => '',
 			'type' => 'text',
 			'instructions' => '',
@@ -333,7 +333,7 @@ register_field_group(array (
 		array (
 			'key' => 'field_54466bd6c02db',
 			'label' => 'MP4',
-			'name' => 'url_mp4',
+			'name' => 'urlMp4',
 			'prefix' => '',
 			'type' => 'text',
 			'instructions' => '',
@@ -350,7 +350,7 @@ register_field_group(array (
 		array (
 			'key' => 'field_54466c16c02dc',
 			'label' => 'WebM',
-			'name' => 'url_webm',
+			'name' => 'urlWebm',
 			'prefix' => '',
 			'type' => 'text',
 			'instructions' => '',
@@ -367,7 +367,7 @@ register_field_group(array (
 		array (
 			'key' => 'field_54466c30c02de',
 			'label' => 'Ogg',
-			'name' => 'url_ogg',
+			'name' => 'urlOgg',
 			'prefix' => '',
 			'type' => 'text',
 			'instructions' => '',
@@ -420,7 +420,7 @@ register_field_group(array (
 				array (
 					'key' => 'field_54452c35ae1ec',
 					'label' => 'Begin',
-					'name' => 'clip_begin_time',
+					'name' => 'clipBeginTime',
 					'prefix' => '',
 					'type' => 'text',
 					'instructions' => '',
@@ -438,7 +438,7 @@ register_field_group(array (
 				array (
 					'key' => 'field_544532bd8686d',
 					'label' => 'End',
-					'name' => 'clip_end_time',
+					'name' => 'clipEndTime',
 					'prefix' => '',
 					'type' => 'text',
 					'instructions' => '',
@@ -456,7 +456,7 @@ register_field_group(array (
 				array (
 					'key' => 'field_54452dc6ae1ef',
 					'label' => 'Subject',
-					'name' => 'clip_subject',
+					'name' => 'clipSubject',
 					'prefix' => '',
 					'type' => 'taxonomy',
 					'instructions' => '',
@@ -511,7 +511,7 @@ register_field_group(array (
 				array (
 					'key' => 'field_54453573cb72b',
 					'label' => 'Time',
-					'name' => 'infocard_begin_time',
+					'name' => 'infocardBeginTime',
 					'prefix' => '',
 					'type' => 'text',
 					'instructions' => '',
@@ -529,7 +529,7 @@ register_field_group(array (
 				array (
 					'key' => 'field_544535f1cb72c',
 					'label' => 'Card',
-					'name' => 'infocard_card',
+					'name' => 'infocardCard',
 					'prefix' => '',
 					'type' => 'relationship',
 					'instructions' => '',
