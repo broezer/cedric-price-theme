@@ -464,7 +464,7 @@ register_field_group(array (
 					'conditional_logic' => 0,
 					'column_width' => '',
 					'taxonomy' => 'post_tag',
-					'field_type' => 'multi_select',
+					'field_type' => 'select',
 					'allow_null' => 0,
 					'load_save_terms' => 1,
 					'return_format' => 'id',
